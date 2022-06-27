@@ -1,14 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HbIconModule, HbTableModule } from '@hotelbeds-com/common-front-ui-lib';
 
+
+import { HbButtonModule } from '@hotelbeds-com/common-front-ui-lib';
 import { AppComponent } from './app.component';
+import { TableInformationComponent } from './table-information/table-information.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TableInformationComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HbButtonModule,
+    HbIconModule,
+    HbTableModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
